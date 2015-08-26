@@ -3,8 +3,8 @@ var app = angular.module('jade-is-wrong', ['ui.router']);
 //TODO - remove checkLogin function
 // create the module and name it octobluApp
 app.config(function ($stateProvider, $locationProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/jade');
-  $locationProvider.html5Mode({ enabled: true, requireBase: false});  
+  $urlRouterProvider.otherwise('/');
+  $locationProvider.html5Mode({ enabled: true});  
   $stateProvider
     .state('jade', {
       url: '/jade',
@@ -28,7 +28,7 @@ app.config(function ($stateProvider, $locationProvider, $urlRouterProvider) {
         url: '/is',
         templateUrl: '/pages/is.html'      
       })
-      .state('jade.is.right', {
+      .state('aaron.is.right', {
         url: '/right',
         templateUrl: '/pages/right.html'
       });
